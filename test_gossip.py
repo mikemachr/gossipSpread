@@ -17,17 +17,17 @@ def simulate_gossip_scenario(matrix_size, fill_percentage, radius, n_particles, 
 R = 5.
 N = 100
 I = 500
-IR = 0.1
+IR = 0.3
 UR = 0.3
-p = 0.1
+p = 0.2
 
 # Simulate scenarios
 simulate_gossip_scenario(matrix_size=N, fill_percentage=1.0, radius=R, n_particles=N, iterations=I,
                          infection_radius=IR, update_radius=UR, spread_rate=0.001,
                          title='Everyone connected, spicy gossip', filename='everyone_connected_spicy_gossip.gif')
 
-simulate_gossip_scenario(matrix_size=N, fill_percentage=0.6, radius=R, n_particles=N, iterations=I,
-                         infection_radius=IR, update_radius=UR, spread_rate=IR,
+simulate_gossip_scenario(matrix_size=N, fill_percentage=1.0, radius=R, n_particles=N, iterations=I,
+                         infection_radius=IR, update_radius=UR, spread_rate=0.1,
                          title='Everyone connected, dull gossip', filename='everyone_connected_dull_gossip.gif')
 
 simulate_gossip_scenario(matrix_size=N, fill_percentage=0.5, radius=R, n_particles=N, iterations=I,
@@ -35,14 +35,14 @@ simulate_gossip_scenario(matrix_size=N, fill_percentage=0.5, radius=R, n_particl
                          title='Half connected, spicy gossip', filename='half_connected_spicy_gossip.gif')
 
 simulate_gossip_scenario(matrix_size=N, fill_percentage=0.5, radius=R, n_particles=N, iterations=I,
-                         infection_radius=IR, update_radius=UR, spread_rate=IR,
+                         infection_radius=IR, update_radius=UR, spread_rate=0.1,
                          title='Half connected, dull gossip', filename='half_connected_dull_gossip.gif')
 
 
-simulate_gossip_scenario(matrix_size=N, fill_percentage=0.5, radius=R, n_particles=N, iterations=I,
+simulate_gossip_scenario(matrix_size=N, fill_percentage=0.2, radius=R, n_particles=N, iterations=I,
                          infection_radius=IR, update_radius=UR, spread_rate=0.001,
                          title='Sparsely connected, spicy gossip', filename='sparsely_connected_spicy_gossip.gif')
 
-simulate_gossip_scenario(matrix_size=N, fill_percentage=0.5, radius=R, n_particles=N, iterations=I,
-                         infection_radius=IR, update_radius=UR, spread_rate=IR,
+simulate_gossip_scenario(matrix_size=N, fill_percentage=0.2, radius=R, n_particles=N, iterations=I,
+                         infection_radius=IR, update_radius=UR, spread_rate=0.1,
                          title='Sparsely connected, dull gossip', filename='sparsely_connected_dull_gossip.gif')

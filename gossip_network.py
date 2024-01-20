@@ -244,7 +244,7 @@ class Gossip:
             self.plot_iteration(ax)
 
         anim = FuncAnimation(fig, update, frames=self.iterations, repeat=False)
-        anim.save(filename, writer='pillow', fps=2)
+        anim.save(filename, writer='pillow', fps=3)
 
     def visualize_single_iteration(self):
         """Visualize a single iteration of the system."""

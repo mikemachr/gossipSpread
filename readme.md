@@ -16,7 +16,7 @@ I was looking for a fun mathematical puzzle, and I remembered one of my undergra
 
 ## Components
 
-First of all, for gossip to exist, we need people. They can be simulated using particles, both in a 2D or 3D space. For simplicity, I stuck with 2D.
+First of all, for gossip to exist, we need people. They can be simulated using particles, both in a 2D or 3D space. For simplicity, I stuck with 2D. (Plus theres also one strange property of random walks in 3D which states that they may never return to their starting point, which you can view a nice video about [here](https://www.youtube.com/watch?v=iH2kATv49rc)), that could have some funny implications for long simulations.
 
 People aren't simply spreading gossips around just because; they usually do this within their social circle, which is why to simulate this, we would need a social network. This can be built simply using an adjacency matrix, let's call it $A$.
 
@@ -55,13 +55,13 @@ Gossip.animate_system_evolution()
 member function.
 ## Example Usage
 
-To run a basic simulation, execute the following command:
+To run 4 basic scenarios and animate them, execute the following command:
 
 ```bash
 python test_gossip.py
 ```
 
-This file contains some pre fabricated scenarios with easily updatable parameters. 
+This file contains easily updatable parameters for you to play around with. Full disclosure, this is not optimized code by far, so simulations will take a while.
 ## Installation
 
 To install the required dependencies, run:
@@ -71,6 +71,6 @@ pip install -r requirements.txt
 ```
 ## License
 
-This project is licensed under the  [MIT License](https://mit-license.org/).
+This project is licensed under the  [MIT License](LICENSE).
 
 
